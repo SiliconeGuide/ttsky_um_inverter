@@ -5,10 +5,11 @@
 
 `default_nettype none
 
-module tt_um_example (
+module tt_um_magic_challenge (
     input  wire       VGND,
-    input  wire       VDPWR,    // 1.8v power supply
-//    input  wire       VAPWR,    // 3.3v power supply
+    //input  wire       VDPWR,    // 1.8v power supply
+    //Do I add this along in the layout?
+    input  wire       VAPWR,    // 3.3v power supply
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -19,5 +20,41 @@ module tt_um_example (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+
+
+  double_inverter double_inverter (
+        .VDD(VPWR),
+        .VSS(VGND),
+        .IN(ua[0]),
+        .OUT(ua[1])
+        );
+
+    // ties for the output enables
+    assign uo_out[0] = VGND;
+    assign uo_out[1] = VGND;
+    assign uo_out[2] = VGND;
+    assign uo_out[3] = VGND;
+    assign uo_out[4] = VGND;
+    assign uo_out[5] = VGND;
+    assign uo_out[6] = VGND;
+    assign uo_out[7] = VGND;
+
+    assign uio_out[0] = VGND;
+    assign uio_out[1] = VGND;
+    assign uio_out[2] = VGND;
+    assign uio_out[3] = VGND;
+    assign uio_out[4] = VGND;
+    assign uio_out[5] = VGND;
+    assign uio_out[6] = VGND;
+    assign uio_out[7] = VGND;
+
+    assign uio_oe[0] = VGND;
+    assign uio_oe[1] = VGND;
+    assign uio_oe[2] = VGND;
+    assign uio_oe[3] = VGND;
+    assign uio_oe[4] = VGND;
+    assign uio_oe[5] = VGND;
+    assign uio_oe[6] = VGND;
+    assign uio_oe[7] = VGND;
 
 endmodule

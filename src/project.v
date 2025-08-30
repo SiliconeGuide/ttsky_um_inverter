@@ -5,10 +5,9 @@
 
 `default_nettype none
 
-module tt_um_magic_challenge (
+module tt_um_inverter (
     input  wire       VGND,
-    //input  wire       VDPWR,    // 1.8v power supply
-    //Do I add this along in the layout?
+    input  wire       VDPWR,    // 1.8v power supply
     input  wire       VAPWR,    // 3.3v power supply
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
@@ -23,10 +22,10 @@ module tt_um_magic_challenge (
 
 
   double_inverter double_inverter (
-        .VDD(VPWR),
+        .VDD(VAPWR),
         .VSS(VGND),
-        .IN(ua[0]),
-        .OUT(ua[1])
+        .input(ua[1]),
+        .output(ua[0])
         );
 
     // ties for the output enables

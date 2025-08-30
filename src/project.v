@@ -23,6 +23,7 @@ module tt_um_inverter (
 
   double_inverter double_inverter (
         .VDD(VAPWR),
+        .VDD(VDPWR),
         .VSS(VGND),
         .input(ua[1]),
         .output(ua[0])

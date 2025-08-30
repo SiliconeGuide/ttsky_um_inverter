@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_inverter (
+module ttsky_um_inverter (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
     input  wire       VAPWR,    // 3.3v power supply

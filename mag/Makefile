@@ -1,4 +1,4 @@
-PROJECT_NAME ?= ttsky_um_inverter
+PROJECT_NAME ?= tt_um_siliconeguide_inverter
 MAGIC_RC := /home/ttuser/pdk/sky130A/libs.tech/magic/sky130A.magicrc
 #TEMPLATE_FILE := tt_analog_1x2.def
 TEMPLATE_FILE := tt_analog_1x2_3v3.def

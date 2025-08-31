@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module ttsky_um_inverter (
+module tt_um_siliconeguide_inverter (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
     input  wire       VAPWR,    // 3.3v power supply
@@ -23,7 +23,6 @@ module ttsky_um_inverter (
 
   double_inverter double_inverter (
         .VDD(VAPWR),
-        .VDD(VDPWR),
         .VSS(VGND),
         .input(ua[1]),
         .output(ua[0])

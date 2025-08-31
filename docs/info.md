@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A pair of inverters, a large on after a small one.
 
 ## How to test
 
-Explain how to use your project
+Put a signal into the input pin, and observe the output. It should match the polarity. 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Signal Generator, oscilloscope 

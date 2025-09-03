@@ -532,8 +532,6 @@ MACRO tt_um_siliconeguide_inverter
         RECT 79.510 1.000 97.130 1.400 ;
         RECT 98.830 1.000 116.450 1.400 ;
         RECT 118.150 1.000 135.770 1.400 ;
-      LAYER met5 ;
-        RECT 2.170 219.190 5.230 223.770 ;
   END
 END tt_um_siliconeguide_inverter
 END LIBRARY

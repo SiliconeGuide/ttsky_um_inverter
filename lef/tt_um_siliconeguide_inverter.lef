@@ -441,14 +441,6 @@ MACRO tt_um_siliconeguide_inverter
         RECT 59.190 224.760 59.490 225.760 ;
     END
   END uo_out[7]
-  PIN VDPWR
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT -8.800 4.890 -6.800 220.650 ;
-    END
-  END VDPWR
   PIN VGND
     DIRECTION INOUT ;
     USE GROUND ;

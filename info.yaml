@@ -12,7 +12,7 @@ project:
   
   # How many analog pins does your project use?
   analog_pins: 2        # Valid values: 0 to 6
-  uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
+  uses_3v3: true       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_siliconeguide_inverter"
@@ -56,6 +56,10 @@ pinout:
   # Analog pins - you can add more if you use them, up to 8
   ua[0]: "output"
   ua[1]: "input"
+  ua[2]: ""
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
 
 # Do not change!
 yaml_version: 6
